@@ -1,4 +1,4 @@
-# 09_co-labels.py
+
 """
 Compute post-level co-labelling statistics for the classified corpus.
 
@@ -212,7 +212,7 @@ def main():
 
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
-    # Output 3: per-regime breakdown — for each regime, what fraction of its posts also carry each other label
+    # Output 3: per-regime breakdown, for each regime, what fraction of its posts also carry each other label
     with open(OUT_PER_REGIME, "w", encoding="utf-8", newline="") as f:
         cols = ["regime"] + [f"pct_also_{r}" for r in REGIME_LABELS]
         w = csv.writer(f)
